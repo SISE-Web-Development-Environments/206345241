@@ -25,3 +25,9 @@
 
 body{ background-color: LightGray }
 body{ font-family:verdana; }
+
+.img {
+    width:  19%;
+	height: 200px;
+	background-size: 100%
+}
