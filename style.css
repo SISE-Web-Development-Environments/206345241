@@ -29,5 +29,10 @@ body{ font-family:verdana; }
 .img {
     width:  19%;
 	height: 200px;
-	background-size: 100%
+  background-size: 100%
+}
+.img:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
 }
