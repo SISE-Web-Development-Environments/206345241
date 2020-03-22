@@ -164,9 +164,29 @@
   <label for="lname">Subject:</label><br>
   <input type="text" id="subject" name="subject" value="subject"><br><br>
     <label for="lname">your message to me:</label><br>
-  <textarea name="your mesegge to me:" rows="5" cols="30"></textarea><br>
+  <textarea id="textarea" name="your mesegge to me:" rows="5" cols="30"></textarea><br>
   <INPUT TYPE = "submit" VALUE = "Send"> 
   <INPUT TYPE = "reset" VALUE = "Reset">
+	<P><STRONG>pick emoji:</STRONG> 
+		<SELECT id= "emoji">
+		<OPTION>&#x1F601
+		<OPTION>&#x1F602
+		<OPTION>&#x1F603
+		<OPTION>&#x1F604
+		<OPTION>&#x1F605
+		<OPTION>&#x1F606
+		<OPTION>&#x1F607
+		<OPTION>&#x1F608
+		<OPTION>&#x1F609
+		<OPTION>&#x1F60A
+		<OPTION>&#x1F60B
+		<OPTION>&#x1F60C
+		<OPTION>&#x1F60D
+		<OPTION>&#x1F60E
+		<OPTION>&#x1F60F
+		<OPTION>&#x1F610
+		<OPTION>&#x1F611
+		</SELECT></P>
 </form> 
 <br/>
   <hr>
@@ -182,10 +202,13 @@ $(function(){
   });
 });
 </script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+<script>
+$('#emoji').on('change',function(){
+ var emoji = this;
+ $('#textarea').val(function(_,v){
+     return v + test.value;
+ })
+})
+</script>
 </body>
 </html>
