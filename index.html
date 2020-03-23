@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/emojionearea.min.css" />
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<script src="js/emojionearea.min.js"></script>
 </head>
 <body>
 <div id="fb-root"></div>
@@ -156,15 +163,22 @@
 <H2 ALIGN = "center">Contact me</H2>
 
 <br/>
-<form action="mailto:adiashk@bgu.post.ac.il" ALIGN = "center">
+<form  action="mailto:adiashk@bgu.post.ac.il" ALIGN = "center">
   <label for="fname">Full name:</label><br>
-  <input type="text" id="fname" name="full name" value="full name"><br>
+  <input type="text" id="fname" name="full name" placeholder="full name"><br>
   <label for="lname">e-mail:</label><br>
-  <input type="text" id="e-mail" name="e-mail" value="e-mail"><br>
+  <input type="text" id="e-mail" name="e-mail" placeholder="e-mail"><br>
   <label for="lname">Subject:</label><br>
-  <input type="text" id="subject" name="subject" value="subject"><br><br>
-    <label for="lname">your message to me:</label><br>
-  <textarea id="textarea" name="your mesegge to me:" rows="5" cols="30"></textarea><br>
+  <input type="text" id="subject" name="subject" placeholder="subject"><br><br>
+	<label for="lname">your message to me:</label><br>
+		<textarea id="textarea" name="your mesegge to me:" placeholder="Message" rows="5" cols="30"></textarea><br>
+		<script>
+			$(document).ready(function(){
+				$("#textarea").emojioneArea({
+					pickerPosition: "bottom"
+				}); 
+			})
+		</script> 
   <INPUT TYPE = "submit" VALUE = "Send"> 
   <INPUT TYPE = "reset" VALUE = "Reset">
 
@@ -191,5 +205,6 @@ $('#emoji').on('change',function(){
  })
 })
 </script>
+
 </body>
 </html>
