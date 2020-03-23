@@ -36,3 +36,8 @@ body{ font-family:verdana; }
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5); 
 }
+.textarea{
+  width: 400px;
+  margin: auto;
+
+}
