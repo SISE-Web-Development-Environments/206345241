@@ -1,38 +1,214 @@
-/* The navigation bar */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-}
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
+<div class="navbar">
+<a href="#about">About Me</a>
+<a href="#photos">My Photos</a>
+<a href="#playlist">My Playlist</a>
+<a href="#like">Like</a>
+<a href="#qrcoder">QR code</a>
+<a href="#spa">Q&A</a>
+<a href="#contact">Contact Me</a>
+</div>
+<br/>	
+<br/>
+<br/>   	
 
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+<section id="about" class="section"> 
+  <h2 ALIGN = "center">About me</h2>
+<p style="color:#0A0AAA;font-size:130%;"ALIGN = "center">
+	Hello, my name is Adi Ashkenazi<br/>
+	I'm 25 years old and I'm a student at Ben Gurion Univesity in Beer Sheva<br/>
+	I study Software and Information Systems Engineering in the 3rd year <br/>
+	I was born and raised in kibbutz Yakum (in the Sharon area of Israel)<br/>
+	Now I live in Beer Sheva and work as a cook in an italian restaurant<br/>
+	I like to read, whatch movies, cook and travel
+</p>
+  <hr>
+</section>
 
-/* Change background on mouse-over */
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-}
 
-body{ background-color: LightGray }
-body{ font-family:verdana; }
+<section id="photos" class="section">	
+<br/>
+<br/>
+<H2 ALIGN = "center">My photos</H2>
+<br/>
+<h3 ALIGN = "center">My trip to East Asia in 2017</h3>
+<img class="img" src="img/1.jpg">
+<img class="img" src="img/2.jpg">
+<img class="img" src="img/3.jpg">
+<img class="img" src="img/4.jpg">
+<img class="img" src="img/5.jpg">
+<br/>
+<br/>
+<h3 ALIGN = "center">My job as cook in an Italian restaurant</h3>
+<img class="img" src="img/6.jpg"	>
+<img class="img" src="img/7.jpg" >
+<img class="img"src="img/8.jpg"  >
+<img class="img" src="img/9.jpg" >
+<img class="img" src="img/10.jpg">
+<br/>
+<br/>
+<hr>
 
-.img {
-    width:  19%;
-	height: 200px;
-  background-size: 100%
-}
-.img:hover {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5); 
-}
+</section>
+
+<section id="playlist" class="section">
+<br/>
+<br/>
+<H2 ALIGN = "center">My playlist</H2>
+<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/CziHrYYSyPc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br/>
+<br/>
+<br/>
+<hr>
+
+</section>
+
+
+<section id="like" class="section">
+<br/>
+<br/>
+<H2 ALIGN = "center">Give me a like</H2>
+<div ALIGN = "center" > 
+	<div class="fb-like" data-href="https://sise-web-development-environments.github.io/assignment1-adiashk/" 
+	     data-width="300" data-layout="standard" data-action="like" data-size="large" data-share="true">
+	</div>
+
+</div>
+	<br/>
+<br/>
+<br/>
+  <hr>
+
+</section>
+
+<section id="qrcoder" class="section">
+<br/>
+<br/>
+<H2 ALIGN = "center">Scan my code</H2>
+<div ALIGN = "center"><img  src="img/QR.png" height="15%" width="15%"></div>
+
+
+<br/>
+<br/>
+<br/>
+  <hr>
+
+</section>
+
+<section id="spa" class="section">
+<br/>
+<br/>
+<H2 ALIGN = "center">Q&A</H2>
+<H3 ALIGN = "center">The differences between Web 1.0, Web 2.0, Web 3.0:</H3>
+<ol>
+	<li> <U>The interaction:</U><br/>
+		- Web 1.0 was consider as read-only web with very little interaction, where consumer can exchange the information together but it
+		was<B> not possible to interact with the website</B>. <br/>
+		- Web 2.0 that is considered as read-write web, is also called participative social web, allows
+		managing and assembling large global crowd with common interests in <B>social interaction.</B> <br/>
+		- Web 3.0 is also known as the Semantic Web, targets on linked data sets, includes altering the Web into a database, web of document, 
+		<B> Portable and Personal.</B><br/>
+	</li>
+
+	<li>
+	<U>The Advertising:</U><br/>
+	- In Web 1.0 Companies publish content that people consume, <B>Banner Advertising.</B> <br/>
+	- In Web 2.0 People publish content that other people can consume,
+	companies build platforms that let people publish content for other people (e.g. Flickr, YouTube, Wikipedia, MySpace), <B>Interactive Advertising.</B> <br/>
+	- In Web 3.0 People build applications that people can interact with, companies build platforms that let people publish services by 
+	leveraging the associations between people or special content (e.g. FaceBook, Google Maps), <B>Behavioural Advertising.</B><br/>
+	</li>
+
+	<li>
+	<U>The main features:</U><br/>
+	- Web 1.0: user could store, share, view and print digital pictures, Personal web sites,Content Management system. <br/>
+	- Web 2.0: Podcasting, Blogging, Tagging, Curating with RSS, Social bookmarking, Social networking, Social media.<br/>
+	- Web 3.0: Semantic Web, Artificial Intelligence, 3D Graphics, Connectivity, Ubiquity.<br/>
+	</li>
+</ol>
+<br/>
+<H3 ALIGN = "center">The differences between search results in Web 1.0, Web 2.0, Web 3.0:</H3>
+<H4 ALIGN = "center">Medication side effects search:</H4>
+<ol>
+	<li><U>Web 1.0:</U> The user need to type known url of the website he want to read. for example website about Medication side effects. </br></li>
+	<li><U>Web 2.0:</U> The user search the results in search engine,
+		 he can tpey query about Medication side effects, and get the link to website that contain information about it. </br></li>
+	<li><U>Web 3.0:</U> very simliar to Web 2.0- The user search the results in search engine,
+			the website will probably be with Semantic connection to the query. </br></li>
+</ol>
+
+<br/>
+<br/>
+  <hr>
+
+</section>
+
+<section id="contact" class="section">
+<br/>
+<br/>
+<H2 ALIGN = "center">Contact me</H2>
+
+<br/>
+<form action="mailto:adiashk@bgu.post.ac.il" ALIGN = "center">
+  <label for="fname">Full name:</label><br>
+  <input type="text" id="fname" name="full name" value="full name"><br>
+  <label for="lname">e-mail:</label><br>
+  <input type="text" id="e-mail" name="e-mail" value="e-mail"><br>
+  <label for="lname">Subject:</label><br>
+  <input type="text" id="subject" name="subject" value="subject"><br><br>
+    <label for="lname">your message to me:</label><br>
+  <textarea id="textarea" name="your mesegge to me:" rows="5" cols="30"></textarea><br>
+  <INPUT TYPE = "submit" VALUE = "Send"> 
+  <INPUT TYPE = "reset" VALUE = "Reset">
+	<P><STRONG>pick emoji:</STRONG> 
+		<SELECT id= "emoji">
+		<OPTION>&#x1F601
+		<OPTION>&#x1F602
+		<OPTION>&#x1F603
+		<OPTION>&#x1F604
+		<OPTION>&#x1F605
+		<OPTION>&#x1F606
+		<OPTION>&#x1F607
+		<OPTION>&#x1F608
+		<OPTION>&#x1F609
+		<OPTION>&#x1F60A
+		<OPTION>&#x1F60B
+		<OPTION>&#x1F60C
+		<OPTION>&#x1F60D
+		<OPTION>&#x1F60E
+		<OPTION>&#x1F60F
+		<OPTION>&#x1F610
+		<OPTION>&#x1F611
+		</SELECT></P>
+</form> 
+<br/>
+  <hr>
+
+</section>
+
+
+<script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+    e.preventDefault();
+    $('html,body').scrollTo(this.hash,this.hash); 
+  });
+});
+</script>
+<script>
+$('#emoji').on('change',function(){
+ var emoji = this;
+ $('#textarea').val(function(_,v){
+     return v + test.value;
+ })
+})
+</script>
+</body>
+</html>
