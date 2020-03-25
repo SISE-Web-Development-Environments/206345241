@@ -2,26 +2,43 @@
 .navbar {
   overflow: hidden;
   background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
+ /* position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  list-style: none;
+  padding: 10px 10%;
+
+
 }
 
 /* Links inside the navbar */
 .navbar a {
-  float: left;
+  float: center;
   display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
+header {
+	justify-content: space-between;
+	align-items: center;
+  background-color: #333;
+} 
+
+.navbar  li {
+	display: inline-block;
+  padding: 0px 25px;
+  margin: 0px;
+}
 
 /* Change background on mouse-over */
 .navbar a:hover {
   background: #ddd;
   color: black;
+  
 }
+
 
 body{ background-color: LightGray }
 body{ font-family:verdana; }
@@ -40,4 +57,31 @@ body{ font-family:verdana; }
   width: 400px;
   margin: auto;
 
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
 }
