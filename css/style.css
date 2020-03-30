@@ -43,10 +43,28 @@ header {
 body{ background-color: LightGray }
 body{ font-family:verdana; }
 
+h1{
+  color: maroon;
+}
+
+
+h2{
+  color: firebrick;
+}
+h3{
+  color: darkgreen;
+}
+.recLinks{
+color:darkmagenta;
+}
+.recLinks a{
+  color: #3B5998;
+}
 .img {
-    width:  19%;
-	height: 200px;
+    width:  25%;
+	height: 250px;
   background-size: 100%
+
 }
 .img:hover {
   -ms-transform: scale(1.5); /* IE 9 */
@@ -59,7 +77,7 @@ body{ font-family:verdana; }
 
 }
 .fa {
-  padding: 20px;
+  padding: 15px;
   font-size: 30px;
   width: 30px;
   text-align: center;
