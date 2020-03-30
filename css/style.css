@@ -60,6 +60,10 @@ color:darkmagenta;
 .recLinks a{
   color: #3B5998;
 }
+.imgAle{
+  float: right;
+
+}
 .img {
     width:  25%;
 	height: 250px;
